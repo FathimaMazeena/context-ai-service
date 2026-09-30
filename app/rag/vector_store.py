@@ -49,3 +49,16 @@ class VectorStore:
                 for document in documents
             ]
         )
+
+    def query(
+        self,
+        query_embedding: list[float],
+        n_results: int = 3
+    ) -> dict:
+
+        results = self.collection.query(
+            query_embeddings=[query_embedding],
+            n_results=n_results
+        )
+
+        return results    
