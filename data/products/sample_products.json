@@ -1,0 +1,70 @@
+
+[
+  {
+    "id": "P001",
+    "name": "Soundcore Q20i Wireless Headphones",
+    "brand": "Soundcore",
+    "category": "Audio",
+    "description": "Wireless over-ear headphones with active noise cancellation.",
+    "price": 14500,
+    "currency": "LKR",
+    "stock": 12,
+    "features": [
+      "Active noise cancellation",
+      "Bluetooth connectivity",
+      "40-hour battery life with ANC",
+      "USB-C charging"
+    ],
+    "warranty": "12 months"
+  },
+  {
+    "id": "P002",
+    "name": "JBL Tune 720BT Headphones",
+    "brand": "JBL",
+    "category": "Audio",
+    "description": "Wireless over-ear headphones designed for everyday listening.",
+    "price": 18500,
+    "currency": "LKR",
+    "stock": 8,
+    "features": [
+      "Bluetooth connectivity",
+      "Up to 76 hours of battery life",
+      "Fast charging",
+      "Multipoint connection"
+    ],
+    "warranty": "12 months"
+  },
+  {
+    "id": "P003",
+    "name": "Logitech M331 Silent Wireless Mouse",
+    "brand": "Logitech",
+    "category": "Computer Accessories",
+    "description": "Wireless mouse with reduced clicking noise.",
+    "price": 6500,
+    "currency": "LKR",
+    "stock": 20,
+    "features": [
+      "Silent clicking",
+      "Wireless USB receiver",
+      "Ergonomic design",
+      "Long battery life"
+    ],
+    "warranty": "12 months"
+  },
+  {
+    "id": "P004",
+    "name": "Anker 20000mAh Power Bank",
+    "brand": "Anker",
+    "category": "Mobile Accessories",
+    "description": "High-capacity portable power bank for charging mobile devices.",
+    "price": 12500,
+    "currency": "LKR",
+    "stock": 10,
+    "features": [
+      "20000mAh capacity",
+      "USB-C connectivity",
+      "Multiple charging ports"
+    ],
+    "warranty": "12 months"
+  }
+]

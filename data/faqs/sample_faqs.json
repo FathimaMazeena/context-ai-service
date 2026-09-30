@@ -1,0 +1,23 @@
+
+[
+  {
+    "id": "FAQ001",
+    "question": "Do you offer cash on delivery?",
+    "answer": "Yes. Cash on delivery is available for selected locations within Sri Lanka."
+  },
+  {
+    "id": "FAQ002",
+    "question": "Can I cancel an order?",
+    "answer": "Orders can be cancelled before they are dispatched."
+  },
+  {
+    "id": "FAQ003",
+    "question": "How can I track my order?",
+    "answer": "Customers receive a tracking reference once their order has been dispatched."
+  },
+  {
+    "id": "FAQ004",
+    "question": "Do products include a warranty?",
+    "answer": "Warranty coverage depends on the product. Please refer to the individual product details."
+  }
+]
