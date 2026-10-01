@@ -18,9 +18,11 @@ class Settings(BaseSettings):
         "sentence-transformers/all-MiniLM-L6-v2"
     )
 
-    LLM_API_KEY: str = ""
+    
+    HF_TOKEN: str = ""
 
-    LLM_MODEL: str = ""
+    LLM_MODEL: str = "meta-llama/Llama-3.1-8B-Instruct"
+
 
     model_config = SettingsConfigDict(
         env_file=".env",

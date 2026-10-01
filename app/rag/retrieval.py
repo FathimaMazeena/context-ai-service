@@ -1,3 +1,4 @@
+from app.models.retrieval import RetrievedDocument
 from app.rag.embeddings import EmbeddingService
 from app.rag.vector_store import VectorStore
 
@@ -13,7 +14,7 @@ class RetrievalService:
         self,
         query: str,
         n_results: int = 3
-    ) -> dict:
+    ) -> list[RetrievedDocument]:
 
         query_embedding = self.embedding_service.embed_text(
             query
@@ -24,4 +25,24 @@ class RetrievalService:
             n_results=n_results
         )
 
-        return results
+        retrieved_documents = []
+
+        ids = results["ids"][0]
+        documents = results["documents"][0]
+        metadatas = results["metadatas"][0]
+        distances = results["distances"][0]
+
+        for index, document_id in enumerate(ids):
+
+            retrieved_document = RetrievedDocument(
+                id=document_id,
+                content=documents[index],
+                metadata=metadatas[index],
+                distance=distances[index]
+            )
+
+            retrieved_documents.append(
+                retrieved_document
+            )
+
+        return retrieved_documents
