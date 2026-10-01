@@ -5,8 +5,7 @@ def main():
 
     retrieval_service = RetrievalService()
 
-    #query = "What headphones can reduce background noise?"
-    query = "How long does delivery take outside Colombo?"
+    query = "What headphones can reduce background noise?"
 
     results = retrieval_service.retrieve(
         query=query,
@@ -17,18 +16,13 @@ def main():
 
     print("\n--- Retrieved Documents ---")
 
-    ids = results["ids"][0]
-    documents = results["documents"][0]
-    metadatas = results["metadatas"][0]
-    distances = results["distances"][0]
-
-    for index, document_id in enumerate(ids):
+    for index, document in enumerate(results):
 
         print(f"\nRank: {index + 1}")
-        print(f"Document ID: {document_id}")
-        print(f"Distance: {distances[index]}")
-        print(f"Metadata: {metadatas[index]}")
-        print(f"Content:\n{documents[index]}")
+        print(f"Document ID: {document.id}")
+        print(f"Distance: {document.distance}")
+        print(f"Metadata: {document.metadata}")
+        print(f"Content:\n{document.content}")
         print("-" * 50)
 
 
