@@ -5,9 +5,13 @@ def main():
 
     pipeline = RAGPipeline()
 
+    # question = (
+    #     "How long does delivery take "
+    #     "outside Colombo?"
+    # )
+
     question = (
-        "How long does delivery take "
-        "outside Colombo?"
+        "Do you ship products internationally?"
     )
 
     response = pipeline.ask(
