@@ -1,0 +1,74 @@
+[
+  {
+    "id": "EVAL001",
+    "question": "How long does delivery take outside Colombo?",
+    "expected_source": "shipping_policy_page_1",
+    "expected_facts": ["3–5 working days"],
+    "answerable": true,
+    "category": "shipping"
+  },
+  {
+    "id": "EVAL002",
+    "question": "How many days does delivery take in Colombo?",
+    "expected_source": "shipping_policy_page_1",
+    "expected_facts": ["2–3 working days"],
+    "answerable": true,
+    "category": "shipping"
+  },
+  {
+    "id": "EVAL003",
+    "question": "Can I pay when my order arrives?",
+    "expected_source": "FAQ001",
+    "expected_facts": ["cash on delivery"],
+    "answerable": true,
+    "category": "payment"
+  },
+  {
+    "id": "EVAL004",
+    "question": "Can I cancel my order before it is dispatched?",
+    "expected_source": "FAQ002",
+    "expected_facts": ["before dispatch"],
+    "answerable": true,
+    "category": "orders"
+  },
+  {
+    "id": "EVAL005",
+    "question": "How can I track my order?",
+    "expected_source": "FAQ003",
+    "expected_facts": ["tracking reference"],
+    "answerable": true,
+    "category": "orders"
+  },
+  {
+    "id": "EVAL006",
+    "question": "Can I return a product after receiving it?",
+    "expected_source": "return_policy_page_1",
+    "expected_facts": ["7 days"],
+    "answerable": true,
+    "category": "returns"
+  },
+  {
+    "id": "EVAL007",
+    "question": "Which headphones have active noise cancellation?",
+    "expected_source": "P001",
+    "expected_facts": ["Soundcore Q20i"],
+    "answerable": true,
+    "category": "product"
+  },
+  {
+    "id": "EVAL008",
+    "question": "I need something to charge my phone while travelling.",
+    "expected_source": "P004",
+    "expected_facts": ["Anker 20000mAh Power Bank"],
+    "answerable": true,
+    "category": "product"
+  },
+  {
+    "id": "EVAL009",
+    "question": "Do you ship products internationally?",
+    "expected_source": null,
+    "expected_facts": [],
+    "answerable": false,
+    "category": "unsupported"
+  }
+]
